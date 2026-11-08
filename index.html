@@ -42,7 +42,11 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{overflow-wrap:brea
 .tm-brand-icon{display:grid;place-items:center;background:var(--brand-color);color:#fff;width:47px;height:47px;border-radius:13px;font-size:27px;font-weight:900;line-height:1;letter-spacing:-.07em;box-shadow:0 4px 12px #0002}
 .tm-brand-name{font-size:12px;font-weight:800;letter-spacing:-.02em;color:#fff;white-space:nowrap}
 @media(max-width:520px){.tm-brand-icon{width:40px;height:40px;font-size:23px}.tm-brand-name{font-size:11px}.tm-footer-link{min-height:82px}}
-#busan.tm-network .tm-sixth-brand img.tm-sixth-logo{display:block;width:min(100%,350px);height:auto;object-fit:contain;border-radius:6px} </style><style>.staff-awaiting-photo{font-size:12px!important;text-align:center;line-height:1.5;padding:12px;color:#526777!important;background:#edf3f0!important}.staff-card{align-items:center}</style><style>
+#busan.tm-network .tm-sixth-brand img.tm-sixth-logo{display:block;width:min(100%,350px);height:auto;object-fit:contain;border-radius:6px} 
+/* 한국자유총연맹 현수막: 하단 협약 날짜는 카드 밖으로 가리고, 기존 카드 높이는 유지 */
+.tm-partner-link img[src="partner-11.jpg"]{height:185px!important;margin-bottom:-40px!important;}
+.tm-partner-link:has(img[src="partner-11.jpg"]) .tm-partner-label{position:relative;z-index:1;background:#fff;}
+</style><style>.staff-awaiting-photo{font-size:12px!important;text-align:center;line-height:1.5;padding:12px;color:#526777!important;background:#edf3f0!important}.staff-card{align-items:center}</style><style>
 /* 실제 인물 사진과 북부산점 원본 홍보 사진: AI 편집 없이 원본 표시 */
 .staff-real-photo{display:block;width:100%;height:280px;object-fit:contain;object-position:center;background:#edf3f0;border-radius:14px}
 .branch-promo{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;object-position:center;border-radius:13px;margin:18px 0;background:#f1f5f3}
